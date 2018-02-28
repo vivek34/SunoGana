@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_welcome"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.vivekpatel.mediaplayer.Welcome">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/welcome"
+        android:layout_marginTop="70dp"
+        android:id="@+id/welcome"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:text="Social"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:background="@android:color/transparent"
+        android:id="@+id/social"
+        android:textSize="20sp"
+        android:onClick="Social"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/livequiz"
+        android:layout_alignRight="@+id/livequiz"
+        android:layout_alignEnd="@+id/livequiz"
+        android:layout_alignLeft="@+id/livequiz"
+        android:layout_alignStart="@+id/livequiz"/>
+
+    <Button
+        android:text="Live Quiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:id="@+id/livequiz"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:onClick="LiveQuiz"
+        android:background="@android:color/transparent"
+        android:layout_below="@+id/original"
+        android:layout_alignRight="@+id/original"
+        android:layout_alignEnd="@+id/original"
+        android:layout_alignLeft="@+id/original"
+        android:layout_alignStart="@+id/original"/>
+
+    <Button
+        android:text="Early Originals"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:layout_marginTop="35dp"
+        android:id="@+id/original"
+        android:textSize="20sp"
+        android:onClick="Originals"
+        android:background="@android:color/transparent"
+        android:layout_below="@+id/welcome"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
